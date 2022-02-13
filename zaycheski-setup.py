@@ -5,7 +5,7 @@ import subprocess
 
 
 COMMAND_NAME = "zaycheski"
-USERNAME = "maksimsuklin"
+USERNAME = "varvarasafonova"
 PREFIX = f"/Users/username/"
 zaycheski_directory = ""
 local_commands_file = ""
@@ -81,14 +81,14 @@ def main():
 	global USERNAME
 	
 	command_name = input("Do you want zaycheski or zaycheskaya (zaycheski default): ")
-	entered_username = input("Enter username (maksimsuklin default): ")
+	entered_username = input("Enter username (varvarasafonova default): ")
 
 	if command_name != "zaycheskaya":
 		command_name = "zaycheski"
 	COMMAND_NAME = command_name
 
 	if len(entered_username) < 1:
-		USERNAME = "maksimsuklin"
+		USERNAME = "varvarasafonova"
 	else:
 		USERNAME = entered_username
 
